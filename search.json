@@ -2,99 +2,71 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "Nyssa Galatas",
     "section": "",
-    "text": "Nyssa Galatas is a student at the University of Texas at Dallas. I am pursuing a B.S. in Public Policy and a M.S. in Social Data and Analytics. I am also studying for a credential in Legal Research and a minor in Asian Studies.\nI am a detail-oriented Public Policy student, focusing on policy effectiveness and the economic effects of government. I am interested in continuing to explore governmental law, code, and the use of textual data, spatial data, economic data, and web data in government.\n\n\nContact Me\nnggalatas@gmail.com\nngg210001@gmail.com\nhttps://www.linkedin.com/in/nyssa-galatas/"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Nyssa Galatas is a student at the University of Texas at Dallas. I am pursuing a B.S. in Public Policy and a M.S. in Social Data and Analytics. I am also studying for a credential in Legal Research and a minor in Asian Studies.\nI am a detail-oriented Public Policy student, focusing on policy effectiveness and the economic effects of government. I am interested in continuing to explore governmental law, code, and the use of textual data, spatial data, economic data, and web data in government.\n\n\nContact Me\nnggalatas@gmail.com\nngg210001@gmail.com\nhttps://www.linkedin.com/in/nyssa-galatas/"
+    "text": "About Me\n\nHello! This is my personal website, which presents my academic background as a master’s student in data-related studies, along with selected projects, code, and research interests in economics, public policy, and legal studies.\nI am pursuing a B.S. in Public Policy and an M.S. in Social Data and Analytics, with a graduate certificate in Geospatial Information Science. I am also completing a credential in Legal Research and a minor in Asian Studies. As a detail-oriented Public Policy student, my work focuses on policy effectiveness, the economic impacts of government action, and governmental implementation and interpretation of law. I am particularly interested in the use of computational methods and coding to analyze textual, spatial, economic, and web-based data in public policy and legal research contexts.\n\n\n\nMy Personal Life\n\nOutside of my academic work, I enjoy cultivating both creative and exploratory interests. I am an avid plant enthusiast and gardener, volunteering at the UT Dallas Eco Hub. I also enjoy crocheting and have expanded my garden to include fake plants that are crocheted, felted, and even built out of legos.\nIn my free time, I also love reading reading history books and science fiction. Recent books that I have enjoyed include King: A Life by Jonathan Eig and The Sparrow by Mary Doria Russell. With the Olympics underway, Pour ne pas disparaître by Gabriella Papadakis is next on my reading list.\nFinally, one of my major passions is traveling. I have had the opportunity to study abroad in Switzerland, which deepened my interest in comparative policy and culture. I also enjoy vacationing with friends, including a visit to Vancouver for leisure."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Nyssa has worked on many projects studying spatial data, economics, and policy efficiency.\n\nEPPS 6302 Projects\nClick on anything below to access my projects from Fall 2024.\n\nAssignment 1: Qualtrics Survey\n\n\nAssignment 2: Panels and Data\n\n\nAssignment 3: Quanteda and Text Data\n\n\nAssignment 4: Webscraping"
+    "text": "Nyssa has worked on many projects studying spatial data, economics, and policy efficiency. This page contains academic projects from Dr. Karl Ho’s classes.\n\n\nEPPS 6302 Projects\nClick on anything below to access my projects from Fall 2024.\n\nAssignment 1: Qualtrics Survey\n\n\nAssignment 2: Panels and Data\n\n\nAssignment 3: Quanteda and Text Data\n\n\nAssignment 4: Webscraping\n\n\n\n\nEPPS 6354 Projects\nClick on anything below to access my projects from Spring 2026.\n\nAssignment 1: Project Ideas and Database Uses\n\n\n\n\nGISC 6363 Project\nExplore my ArcGIS Web experience on the WNBA here!"
   },
   {
     "objectID": "experience.html",
     "href": "experience.html",
     "title": "Experience",
     "section": "",
-    "text": "Nyssa has worked as an intern at the National Conference for State Legislatures. I currently work as a Student Tour Guide and Admission Representative (STAR) at the University of Texas at Dallas. I also teach a freshman seminar course as a First Year Leader."
-  },
-  {
-    "objectID": "personal.html",
-    "href": "personal.html",
-    "title": "Personal",
-    "section": "",
-    "text": "Hi! I have one wonderful cat named Cosmo and many plants. I love to read, draw, and am considering going to law school.\n\n\n\nCosmo and some of my plants!"
-  },
-  {
-    "objectID": "Assignments/Epps6302_Assignment2.html",
-    "href": "Assignments/Epps6302_Assignment2.html",
-    "title": "Panel and Google Trends",
-    "section": "",
-    "text": "Qualtrics Panel\nHello! Access my survey through this link.\n\n\nGoogle Trends\nFrom the Google Trends website, you can see the difference in overall election searches, Trump, and Harris search terms.\n\nHere, the 2020 election is the most popular, forming the maximum 100 value. Donald Trump’s popularity increases around the 2016 election and his presidency, then declines after he leaves office. Kamala Harris’s popularity is more minimal than either, with some increase after the launch of her presidential campaign.\n\n\nUsing the chart above, it is clear that in every state, Donald Trump takes up a larger percentage of searches than Kamala Harris.\n\nUsing ggtrends\nWith the ggtrends library, this data can also be summarized. Modeling total interest over time results in this graph:\n\nFrom this, it is also visible that the popularity for elections peaked much higher in 2020 than in other years. The package allows for more manipulation of data, including the combination of topics seen above, than the Google Trends website alone allows."
-  },
-  {
-    "objectID": "Assignments/Epps6302_Assignment1.html",
-    "href": "Assignments/Epps6302_Assignment1.html",
-    "title": "Qualtrics Survey",
-    "section": "",
-    "text": "Hello! Access my survey through this link.\nIf you want it in a pdf form, click here.\nThe survey is structured in a linear format, with two skips available to avoid irrelevant questions for the user. The questionnaire is for distribution by a movie rental company to their customers. The questions have no clear order, but the most important information to the company appears to come first in the survey. Creating more skips for irrelevant questions and reordering the questions would be beneficial. This would make it such that if someone does not own a DVD player in question 3, they do not have to answer again in question 10."
+    "text": "I have professional experience as an intern with the National Conference of State Legislatures and the North Central Texas Council of Governments, where she supported policy research and intergovernmental initiatives. At The University of Texas at Dallas, I served as a Student Tour Guide and Admissions Representative (STAR) and as a First Year Leader, teaching freshman seminar courses and mentoring first-year students."
   },
   {
     "objectID": "experience.html#interning-at-national-conference-for-state-legislatures",
     "href": "experience.html#interning-at-national-conference-for-state-legislatures",
     "title": "Experience",
     "section": "Interning at National Conference for State Legislatures",
-    "text": "Interning at National Conference for State Legislatures\nI worked at NCSL for six months, from the beginning of 2024 through the summer. Here are some of the many tasks I performed while with them:\n\nPublishing an Article\n\nWhile working at NCSL, I was lucky enough to help out with many projects and tasks. One of those was the opportunity to publish a summary article of a brief by Andrew Smalley, who I interned under. This covers some of the recent efforts done by states to make more efficient workforce systems.\n\n\nTracking Postsecondary Legislation\nMy primary task working at NCSL was to track and categorize state legislation for higher education and workforce efforts. I tracked around 2000 pieces of legislation in topic areas ranging from dual enrollment to financial aid. Look through the legislation below:\n\n\n\nLook through legislation here!\n\n\n\n\nStudent Loan Database\n\n\n\n\nLook through Student Loan Legislation here!\n\n\nOne other database I tracked legislation for as an intern was our Student Loan Bill Tracking Database. This takes the legislation passed and categorizes it further in a Power BI database to break down forgiveness, licensure, oversight, and tax bills into their own groupings. Check it out!"
+    "text": "Interning at National Conference for State Legislatures\nI served as an intern with the National Conference of State Legislatures for six months, from early 2024 through the summer, during which I contributed to a range of research, analytical, and policy support functions, including:\n\nPublishing an Article\n\n\n\n\n\n\n\n\n\n\nWhile working at the National Conference of State Legislatures, I had the opportunity to contribute to a wide range of projects and tasks. One of these included publishing a summary article based on a policy brief by Andrew Smalley, whom I interned under. This work focused on recent state efforts to improve the efficiency and coordination of workforce development systems.\n\n\n\n\n\nTracking Postsecondary Legislation\n\n\n\nMy primary responsibility at NCSL was tracking and categorizing state legislation related to higher education and workforce development. I monitored and analyzed approximately 2,000 bills across a range of policy areas, including dual enrollment and financial aid, and organized this information into a publicly accessible database to support transparency, public understanding, and policy research.\n\n\n\n\n\nLook through legislation here!\n\n\n\n\n\n\n\nStudent Loan Database\n\n\n\n\n\n\nLook through Student Loan Legislation here!\n\n\n\n\nIn addition to this work, I also tracked legislation for NCSL’s Student Loan Bill Tracking Database. This involved organizing enacted legislation within a Power BI database and categorizing bills by topic areas such as loan forgiveness, licensure, oversight, and tax policy to make the data more accessible and easier to analyze."
   },
   {
     "objectID": "experience.html#working-as-a-student-tour-and-admission-representative",
     "href": "experience.html#working-as-a-student-tour-and-admission-representative",
     "title": "Experience",
     "section": "Working as a Student Tour and Admission Representative",
-    "text": "Working as a Student Tour and Admission Representative\nI currently work as a tour guide for the University of Texas at Dallas. There, I perform administrative tasks like calls, mailing of promotional items, and answering visitor questions. I also help coordinate and work our Scholars’ Day events, which have around over 1000 guests in total!"
+    "text": "Working as a Student Tour and Admission Representative\nI also worked as a tour guide and admissions representative for the University of Texas at Dallas. There, I performed administrative tasks like calls, mailing of promotional items, and answering visitor questions. I also helped coordinate and work our Scholars’ Day events, which have around over 1000 guests in total! The two years of working there taught me never to expect a boring day and to be quick on my feet to adapt to whatever may occur."
   },
   {
     "objectID": "experience.html#teaching-as-a-first-year-leader",
     "href": "experience.html#teaching-as-a-first-year-leader",
     "title": "Experience",
     "section": "Teaching as a First-Year Leader",
-    "text": "Teaching as a First-Year Leader\nEvery fall, freshman in the School of Economic, Political, and Policy Sciences take a freshman seminar course. This fall, I am excited to be with the FYL program co-teaching one of these courses. Check out our presentations below:\n\n\n\n\nDela Cruz_Galatas_Week_1_EPPS1110.303_Presentation by Nyssa Galatas and Jasha Dela Cruz"
+    "text": "Teaching as a First-Year Leader\nEvery fall, freshman in the School of Economic, Political, and Policy Sciences take a freshman seminar course. For the past fall semesters, I was honored with the opportunity to teach freshmen through this program. Through this experience, I strengthened my mentoring and leadership skills and further developed my public speaking abilities. I am especially grateful to Dr. Thomas, who directs the program, for his guidance and support in everything from curriculum development and book recommendations to strategies for engaging and supporting students. You can view a course presentations below:\n\n\n\n\nGalatas_Week_1_EPPS1110.303_Presentation by Nyssa Galatas"
   },
   {
-    "objectID": "Assignments/Epps6302_Assignment3.html",
-    "href": "Assignments/Epps6302_Assignment3.html",
-    "title": "Quanteda and Textual Analysis",
+    "objectID": "EPPS6354_Assignment1.html",
+    "href": "EPPS6354_Assignment1.html",
+    "title": "EPPS 6354 Assignment 1",
     "section": "",
-    "text": "Analysis of Biden-Xi Summit Speeches\nFrom the built in data in Quanteda, we can see popular accounts that tweeted about the summit.\n\n\n\nAnalysis of Presidential Speeches\nUsing the wordcloud analysis, the most common words can be highlighted.\n\nThis can also be broken out by president, with Bush, Obama, and Trump’s most frequent words seen below.\n\nThese words can then be graphed by their frequency, as seen for the previous four administrations below.\n\nUsing an x-ray plot, the frequency of specific terms can be seen across different administrations below.\n\n\n\nWordfish\nWordfish aligns words dimensionally based on relationships between them. It’s used to arrange words ideologically, especially in politics. It’s based on the frequency of the words used and their frequency in relation to other words and assumes a single-dimension to words and that users with such beliefs use the words more frequently. It generates a roughly curved graph that looks like a fishtail, hence the name."
+    "text": "Question 1: 3 Database Systems that Store Persistent Data\n\n\n\nQuestion 2: 3 Domain Application Projects\n\n\n\nQuestion 3: 3 Storage Uses in Social Media Systems\n\n\n\nRemaining Questions"
   },
   {
-    "objectID": "Assignments/Epps6302_Assignment4.html",
-    "href": "Assignments/Epps6302_Assignment4.html",
-    "title": "Youtube API",
+    "objectID": "Assignments/EPPS6354_Assignment1.html",
+    "href": "Assignments/EPPS6354_Assignment1.html",
+    "title": "EPPS 6354 Assignment 1",
     "section": "",
-    "text": "Data from Webscraping\nYou can see some of the output from the code here:\n\nSome charts of the analysis of the channel are below:\n\n\nThere are two broad conclusions from the data. Firstly, as expected, videos with more views get more likes and comments. Additionally, the majority of videos have low videos, likes, and comment values, with only a few having high numbers of all. This is also consistent with the expected idea that most videos are not viral.\nBecause of the restrictions on queries, I could not use comment data thoroughly. However, if the comment data were compiled into a corpus for analysis, it could be used for textual analysis."
+    "text": "Question 1: 3 Database Systems that Store Persistent Data\n\n\n\n\nQuestion 2: 3 Domain Application Projects\n\n\n\n\nQuestion 3: 3 Storage Uses in Social Media Systems\n\n\n\n\nRemaining Questions\n\n\n\n\nPresentation\n\n\n\n\nEPPS 6354 Assignment 1 by Nyssa Galatas"
   },
   {
-    "objectID": "Assignments/Epps6302_FinalProject.html",
-    "href": "Assignments/Epps6302_FinalProject.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "Access a PDF of our project here:\nFinal Project\n\n\nOur Presentation:\n\n\n\nSee the code here:\nhttps://github.com/ngalatas/epps6302project"
+    "objectID": "experience.html#editing-for-the-undergraduate-law-review",
+    "href": "experience.html#editing-for-the-undergraduate-law-review",
+    "title": "Experience",
+    "section": "Editing for the Undergraduate Law Review",
+    "text": "Editing for the Undergraduate Law Review\n\n\n\nDuring my final year at UT Dallas, I took a legal research course that culminated in a certificate in Legal Research and Writing. Through this program, I met members of the team behind the UT Dallas Undergraduate Law Review and decided to join the journal as a staff editor. I am deeply grateful for the opportunity to work with such thoughtful and dedicated writers, whose scholarship is both rigorous and inspiring. Two of the writers I worked with, Kiran Malik and Taher Mogri, contributed outstanding articles to the inaugural volume of the law review, which can be found by clicking the journal to the right.\n\n\n\n\n\n\n\nYou can also download the specific articles as PDFs:\n\n\n\n\n\n“Executive Abdication at Abbey Gate: Statutory Violations and Separation-of-Powers Breakdown in the 2021 Afghanistan Withdrawal” by Kiran Malik\n“Algorithmic Amplification and the Limits of Section 230: Rethinking Platform Immunity in the Age of Engagement” by Taher Mogri"
   },
   {
-    "objectID": "Assignments/Epps6302_Assignment5.html",
-    "href": "Assignments/Epps6302_Assignment5.html",
-    "title": "Webscraping",
-    "section": "",
-    "text": "Resources from Webscraping\nAccess the csv format of the Texas 2022 Elections data I scraped through this link.\nIf you want to see some of the government documents I scraped, click any of the links below:\nSenate Resolution 115 of the 118th Session\nSenate Resolution 805 of the 118th Session\nSenate Resolution 890 of the 118th Session\nSenate Record for September 15th, 2024\n\n\nResults of Webscraping\nWhile the resources already in a csv format are usable to some extent, the pdf files are not well formatted for analysis. If the search were filtered for a specific type of government document, such as resolutions, it is possible that a consistent format could be used to extract text from the data. However, in its current format, the pdf file type is limiting to the use for textual analysis."
+    "objectID": "experience.html#conferences",
+    "href": "experience.html#conferences",
+    "title": "Experience",
+    "section": "Conferences",
+    "text": "Conferences\nAs an undergraduate, I had the privilege of learning from and collaborating with many talented peers, whose work I was able to hear firsthand at academic conferences. I was honored to participate in the 17th Annual Economics Scholars Program Conference for Undergraduate Research, where I was session chair and enjoyed exploring the Dallas Federal Reserve. I was also selected to be a part of the Public Policy and International Affairs Program (PPIA) hosted by the Lyndon B. Johnson School of Public Affairs at UT Austin, where I got to present a policy case with a team before local officials. Through these events, I was able to learn about new perspectives from my fellow students and meet some the brightest emerging scholars in my field."
   }
 ]
