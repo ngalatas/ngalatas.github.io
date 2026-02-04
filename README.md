@@ -1,1 +1,1 @@
-# This is a website about me. Check it out: https://ngalatas.github.io/about_me/
+# This is a website about me. Check it out: https://ngalatas.github.io/
