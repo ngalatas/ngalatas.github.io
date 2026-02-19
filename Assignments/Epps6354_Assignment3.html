@@ -231,12 +231,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="https://www.db-book.com/university-lab-dir/sqljs.html" class="uri">https://www.db-book.com/university-lab-dir/sqljs.html</a></p>
 <section id="question-1" class="level3">
 <h3 class="anchored" data-anchor-id="question-1">Question 1:</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>#either way outputs <span class="kw">the</span> same result <span class="cf">for</span> student <span class="kw">ID</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- either way outputs the same result for student ID</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">ID</span> <span class="kw">from</span> student;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> <span class="kw">ID</span> <span class="kw">from</span> takes</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>#getting instructors</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- getting instructors</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> name <span class="kw">from</span> instructor</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>#ways <span class="kw">to</span> get departments, slight <span class="kw">order</span> variation <span class="kw">from</span> <span class="kw">table</span> <span class="kw">data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">-- ways to get departments, slight order variation from table data</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> dept_name <span class="kw">from</span> department;</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> dept_name <span class="kw">from</span> course;</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> dept_name <span class="kw">from</span> instructor;</span>
@@ -250,7 +250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> course.dept_name <span class="op">=</span> <span class="st">'Comp. Sci.'</span> </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">and</span> takes.course_id <span class="op">=</span> course.course_id </span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">and</span> takes.<span class="kw">ID</span> <span class="op">=</span> student.<span class="kw">ID</span>;</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>#two ways <span class="kw">to</span> exclude, either returns <span class="kw">the</span> one student who <span class="kw">is</span> <span class="kw">not</span> <span class="kw">in</span> <span class="kw">the</span> takes relation </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">-- two ways to exclude, either returns the one student who is not in the takes relation </span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="kw">distinct</span> student.<span class="kw">ID</span>, student.name </span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> student,takes </span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">except</span> </span>
@@ -264,11 +264,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">select</span> <span class="kw">ID</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">from</span> takes</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">where</span> <span class="dt">year</span> <span class="op">&gt;=</span> <span class="dv">2017</span>);</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>#max salary <span class="kw">by</span> dept, included name <span class="kw">and</span> dept_name <span class="kw">to</span> <span class="kw">check</span> my <span class="kw">work</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">-- max salary by dept, included name and dept_name to check my work</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> <span class="fu">max</span>(salary), name, dept_name</span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> instructor</span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="kw">group</span> <span class="kw">by</span> dept_name</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>#minimum <span class="kw">of</span> <span class="kw">the</span> above</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">-- minimum of the above</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="kw">with</span> max_salary(salary, name, dept_name) <span class="kw">as</span></span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">select</span> <span class="fu">max</span>(salary), name, dept_name</span>
 <span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">from</span> instructor</span>
