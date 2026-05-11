@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPPS 6354 Assignment 2 – Nyssa Galatas</title>
+<title>EPPS 6354 Assignment 5 – Nyssa Galatas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -144,26 +179,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">EPPS 6354 - Assignment 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Assignments/Epps6354_Assignment6.html">
- <span class="dropdown-text">EPPS 6354 - Assignment 6</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Assignments/Epps6354_Assignment7.html">
- <span class="dropdown-text">EPPS 6354 - Assignment 7</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Assignments/Epps6354_Assignment8.html">
- <span class="dropdown-text">EPPS 6354 - Assignment 8</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../images/AIlab.pdf">
- <span class="dropdown-text">EPPS 6354 - AI Lab</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://ngal.shinyapps.io/final/">
- <span class="dropdown-text">EPPS 6354 - Final</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="https://experience.arcgis.com/experience/57ff395a0ec1416789036327f4c26a6c" target="_blank">
  <span class="dropdown-text">GISC 6363 - Final Project</span></a>
   </li>  
@@ -193,10 +208,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#question-1-definitions" id="toc-question-1-definitions" class="nav-link active" data-scroll-target="#question-1-definitions">Question 1: Definitions</a></li>
-  <li><a href="#question-2-3-schema-diagram" id="toc-question-2-3-schema-diagram" class="nav-link" data-scroll-target="#question-2-3-schema-diagram">Question 2 &amp; 3: Schema Diagram</a></li>
-  <li><a href="#question-3-aillm-use-in-databases" id="toc-question-3-aillm-use-in-databases" class="nav-link" data-scroll-target="#question-3-aillm-use-in-databases">Question 3: AI/LLM Use in Databases</a></li>
-  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
+  <li><a href="#question-1" id="toc-question-1" class="nav-link active" data-scroll-target="#question-1">Question 1:</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3:</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4:</a></li>
   </ul>
 </nav>
     </div>
@@ -205,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">EPPS 6354 Assignment 2</h1>
+<h1 class="title">EPPS 6354 Assignment 5</h1>
 </div>
 
 
@@ -222,32 +236,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="question-1-definitions" class="level3">
-<h3 class="anchored" data-anchor-id="question-1-definitions">Question 1: Definitions</h3>
-<p>Relation schema defines the attributes and their allowed values. In a university database, this may specify that a student application profile <em>application</em> consists of a GPA, a Major, and an SAT score, for example, such that the schema is <em>application (hs_GPA, Major, SAT_score)</em>. In contrast, a relation instance is the value that may change over time. For example, at one point there may be a student <em>A</em> with values such that <em>A (3.8, Engineering, 1440).</em> This may change, however, so that at some other time student <em>A</em> may have values such that <em>A (3.9, Art, 1520).</em> Relations themselves describe the association between groups, with tables and values allowing for connection of values across attributes.</p>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1:</h3>
+<p>If the graph is disconnected it means that there are entities that are completely unrelated to other entities by relationships. This can be solved by making sure that all foreign keys and relationships are identified.</p>
+<p>If the graph is a circle, it means everything has at least two relationships, and that from one entity, you can find data in all other entities. This may suggest redundancy in database design.</p>
 <hr>
 </section>
-<section id="question-2-3-schema-diagram" class="level3">
-<h3 class="anchored" data-anchor-id="question-2-3-schema-diagram">Question 2 &amp; 3: Schema Diagram</h3>
-<p><img src="..\images/assignment2db.jpeg" class="img-fluid"></p>
-<p>Foreign keys (as subset of relations) include branch_name as a primary key for branch and foreign key for loan and account. loan_number as aprimary key for loan and a foreign key for borrower. ID as a foreign key for depositer, borrower, customer. account_number is a primary key for account, foreign key for depositer.</p>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3:</h3>
+<p>Having weak entity sets can remove redundancy and simplify relationships. For example, it may be more simple to have an entity be a weak entity than add an attribute for the relationship connecting it.</p>
 <hr>
 </section>
-<section id="question-3-aillm-use-in-databases" class="level3">
-<h3 class="anchored" data-anchor-id="question-3-aillm-use-in-databases">Question 3: AI/LLM Use in Databases</h3>
-<p>Artificial Intelligence can help manage databases by addressing data cleaning tasks such as removing errors with invalid values. This can make databases more efficient by allowing errors to be identified and corrected for quickly, also making the database more accurate.</p>
-<p>LLMs can help with querying databases by converting natural language into searches through conversion to SQL or other formats. This allows for users to not have knowledge of specific keys in the database, but still be able to use it quickly and efficiently.</p>
-<hr>
-</section>
-<section id="presentation" class="level3">
-<h3 class="anchored" data-anchor-id="presentation">Presentation</h3>
-<div style="position: relative; width: 60%; height: 60%; padding-top: 40.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAHBEUJik1s/Jeg98qGCuCVPJTgzkcQS0A/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-</iframe>
-</div>
-<p><a href="https://www.canva.com/design/DAHBEUJik1s/Jeg98qGCuCVPJTgzkcQS0A/view?utm_content=DAHBEUJik1s&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">EPPS 6354 Assignment 2</a> by Nyssa Galatas</p>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4:</h3>
+<section id="a" class="level4">
+<h4 class="anchored" data-anchor-id="a">4a)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- for 4i</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> e.<span class="kw">ID</span>, e.person_name</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee <span class="kw">as</span> e</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> works <span class="kw">as</span> w <span class="kw">on</span> e.<span class="kw">ID</span> <span class="op">=</span> w.<span class="kw">ID</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> company <span class="kw">as</span> c <span class="kw">on</span> w.company_name <span class="op">=</span> c.company_name</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> e.city <span class="op">=</span> c.city;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">-- for 4ii</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> e.<span class="kw">ID</span>, e.person_name</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee <span class="kw">as</span> e</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> manages <span class="kw">as</span> m <span class="kw">on</span> e.<span class="kw">ID</span> <span class="op">=</span> m.<span class="kw">ID</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> employee <span class="kw">as</span> mgr <span class="kw">on</span> m.manager_id <span class="op">=</span> mgr.<span class="kw">ID</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> e.street <span class="op">=</span> mgr.street</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">and</span> e.city <span class="op">=</span> mgr.city;</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">-- for 4iii</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">-- for 4i</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">select</span> e.<span class="kw">ID</span>, e.person_name</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">from</span> employee <span class="kw">as</span> e</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> works <span class="kw">as</span> w <span class="kw">on</span> e.<span class="kw">ID</span> <span class="op">=</span> w.<span class="kw">ID</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">join</span> (</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">select</span> company_name, <span class="fu">avg</span>(salary) <span class="kw">as</span> avg_salary</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">from</span> works</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">group</span> <span class="kw">by</span> company_name</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>) <span class="kw">as</span> avg_company</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">on</span> w.company_name <span class="op">=</span> avg_company.company_name</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">where</span> w.salary <span class="op">&gt;</span> avg_company.avg_salary;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>One reason to avoid using multiple natural joins like in the example is that it will join on multiple columns. This can mean that information that is not meant to be joined on is being joined on.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
